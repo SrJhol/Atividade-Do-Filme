@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacidade e Dados Sensíveis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cuidados com Dados Sensíveis</h1>
+    <p>O filme <strong>Snowden</strong> destaca a importância de proteger a privacidade dos usuários. Como desenvolvedor front-end, é fundamental ter responsabilidade com os dados sensíveis. Informações como CPF, e-mail, senha e telefone exigem cuidados extras. Sempre informe o usuário sobre o uso de seus dados e evite armazenar informações críticas no navegador. Use HTTPS e proteja os dados em trânsito e armazenamento.</p>
+
+    <input type="text" name="cpf" placeholder="CPF">
+
+    <input type="password" name="senha" placeholder="Senha">
+
+    <input type="email" name="email" placeholder="E-mail">
+
+    <div class="checklist">
+      <h3>Checklist de Boas Práticas</h3>
+      <ul>
+        <li>[ ] Utilizar HTTPS em todas as páginas que enviam ou recebem dados.</li>
+        <li>[ ] Exibir aviso de uso de dados pessoais aos usuários.</li>
+        <li>[ ] Nunca salvar senhas ou informações sensíveis no LocalStorage.</li>
+        <li>[ ] Informar o usuário claramente sobre como os dados serão utilizados.</li>
+        <li>[ ] Garantir que campos de entrada de dados sensíveis estejam protegidos.</li>
+        <li>[ ] Validar e higienizar dados no front-end antes de enviá-los.</li>
+        <li>[ ] Manter bibliotecas e frameworks atualizados.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="cookie-banner">
+    Este site coleta dados pessoais. Ao prosseguir, você concorda com nossa <a href="#">política de privacidade</a>.
+    <button onclick="fecharBanner()">OK</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
